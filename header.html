@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: rgb(10, 10, 10);
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main {
+            height: 400px;
+            width: 500px;
+            background-color: black;
+            color: white;
+            margin:auto;
+            padding: 1px;
+            margin-top: 40px;
+        }
+
+        .main .div-header {
+            font-size:large;
+            text-align: center;
+            font-family:Arial, Helvetica, sans-serif;
+            background-color: pink;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .main .div-nav {
+            background-color: orange;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 3px;
+        }
+
+        .main .div-side {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 5px;
+            background-color:rgb(185, 233, 67) ;
+            margin: auto;
+            margin-left: 10px;
+            float: left;
+            padding: 100px 30px;
+        }
+
+        .main .content {
+            background-color:rgb(13, 159, 255) ;
+            float: right;
+            margin-right: 10px;
+            border-radius: 5px;
+            padding: 100px 132.5px 100px 132.5px;
+        }
+
+        .main .footer {
+        text-align: center;
+        margin: 10px;
+        margin-top: 240px;
+        border-radius: 10px;
+        background-color: rgb(242, 209, 255);
+        padding: 23px 0px 23px 0px;
+        }
+    </style>
+</head>
+<body>
+    <!--Nu reusesc sa pun texul in mijloc fara sa folosesc padding(am incercat cu justify si cu align si cu flex). Maxim sa pun text-align.-->
+    <div class="main">
+        <div class="div-header">HEADER</div>
+        <div class="div-nav">NAVIGATION</div>
+        <div class="div-side">SIDEBAR</div>
+        <div class="content">CONTENT</div>
+        <div class="footer">FOOTER</div>
+    </div>
+</body>
+</html>
