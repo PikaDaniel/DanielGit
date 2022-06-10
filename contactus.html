@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="./contact-45.svg" />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .main {
+          background-color: white;
+        position: absolute;
+        z-index: 3;
+        box-shadow: 1px 1px 5px gray;
+        width:250px;
+        height: 250px;
+        margin: 150px 10px 0px 300px;
+      }
+
+      .main .divs {
+        justify-content: center;
+        align-items: center;
+        text-align: center;   
+      }
+
+      .Contact {
+        padding: 30px 0px 20px 0px;
+        text-transform: uppercase;
+      }
+
+      input {
+        width: 200px;
+        height: 20px;
+        border-style: none;
+        border-bottom-style:double;
+        border-bottom-color: black;
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      textarea {
+        max-width: 200px;
+        max-height: 100px;
+        min-width: 200px;
+        min-height: 50px;
+        width: 200px;
+        border-style: none;
+        border-bottom-style:double;
+        border-bottom-color: black;
+        font-family: 'Courier New', Courier, monospace;
+      }
+
+      .button {
+        background-color: black;
+        color: white;
+        height: 30px;
+        width: 80px;
+        margin-top: 4px;
+      }
+
+      .blue {
+        position: absolute;
+        z-index: -1;
+        width: 630px;
+        height: 100px;
+        background-color: rgba(163, 235, 248, 0.822);
+        margin: 200px 10px 10px 200px;
+      }
+
+      #image {
+        position: absolute;
+        width:220px;
+        height: 250px;
+        margin: 100px 10px 10px 500px;
+      }
+    </style>
+    <title>ContactUs</title>
+  </head>
+<div class="main">
+    <div class="divs Contact">
+             Contact Us
+        </div>
+    <div class="divs">
+            <input type="text" name="name" placeholder=" Enter your name">
+        </div>
+    <div class="divs">
+            <input type="email" name="email" placeholder=" Enter a valid address">
+        </div>
+    <div class="divs">
+            <textarea name="" id="" cols="0" rows="4" placeholder=" Enter your message"></textarea>
+        </div>
+    <div class="divs">
+            <button class="button">Submit</button>
+        </div>
+</div>
+<div class="blue"></div>
+<img src="./nato-350x320.jpg" alt="" id="image">
+  </body>
+</html>
