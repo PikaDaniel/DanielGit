@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap");
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        margin: 0px 15px 0px 15px;
+      }
+
+      .div-navigation {
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(5, 200px);
+        grid-template-areas: "home about contact company services";
+        gap: 10px;
+      }
+
+      .nav-span {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        text-transform: uppercase;
+        background-color: rgb(0, 60, 172);
+        color: white;
+        height: 60px;
+      }
+
+      .div-info {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        grid-area: "tech psd info";
+        margin: 20px 0px 20px 0px;
+      }
+
+      .span-info {
+        display: grid;
+        align-content: center;
+        height: 60px;
+      }
+
+      .tech {
+        font-size: large;
+        align-content: flex-end;
+        font-family: "Merriweather", serif;
+        border-right: 2px solid black;
+      }
+
+      .psd {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        margin-left: 10px;
+      }
+
+      .mail {
+        justify-content: end;
+        margin-right: 40px;
+      }
+
+      #tech {
+        position: relative;
+        width: 1230px;
+        height: 500px;
+      }
+
+      .inside-img-container {
+        position: absolute;
+        width: 350px;
+        height: 200px;
+        left: 50px;
+        top: 190px;
+        background-color: rgb(0, 60, 172);
+      }
+
+      .span-title-lorem {
+        text-align: center;
+        position: absolute;
+        font-size: large;
+        width: 330px;
+        margin: 0px 0px 0px 10px;
+        top: 10px;
+        border-bottom: 2px dotted black;
+      }
+
+      .span-info-lorem {
+        display: grid;
+        position: relative;
+        text-align: center;
+        top: 40px;
+      }
+
+      .todays-techno {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        top: 270px;
+        left: 600px;
+        font-size: 50px;
+        width: 500px;
+        height: 80px;
+        background-color: rgb(20, 80, 160);
+        color: white;
+      }
+
+      .three-boxes {
+        display: grid;
+        grid-template: 350px / 317px 317px 317px;
+        gap: 140px;
+        margin: 60px 0px 20px 0px;
+      }
+
+      .a240x90px-container {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        background-color: grey;
+      }
+
+      .a240x90px {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        border-style: groove;
+        border-color: white;
+        border-width: 5px;
+        width: 240px;
+        height: 90px;
+        background-color: rgb(49, 49, 49);
+        color: white;
+      }
+
+      .hr-style {
+        border-top: 3px dashed gray;
+        margin-bottom: 20px;
+      }
+
+      .section-two {
+        border-bottom: 3px dotted grey;
+        display: grid;
+        height: 200px;
+        width: 800px;
+        background-color: white;
+      }
+
+      .categories {
+        position: absolute;
+        display: grid;
+        left: 845px;
+        height: 200px;
+        width: 400px;
+        background-color: rgb(231, 231, 231);
+      }
+
+      .a200x160px {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        border-style: double;
+        border-color: rgb(148, 148, 255);
+        width: 200px;
+        height: 160px;
+        background-color: rgb(53, 53, 53);
+        color: white;
+      }
+
+      .span-indo {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        width: 570px;
+        height: 160px;
+        left: 230px;
+      }
+
+      .categories-text {
+        display: flex;
+        align-items: flex-end;
+        border-bottom: 2px dashed rgb(44, 44, 44);
+        margin: 0px 10px 0px 10px;
+        font-size: large;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      .link-text {
+        display: flex;
+        align-items: flex-end;
+        border-bottom: 2px solid rgb(44, 44, 44);
+        margin: 0px 10px 0px 10px;
+      }
+
+      .pictures-container {
+        display: grid;
+        justify-content: space-between;
+        margin-top: 30px;
+        grid-template-columns: repeat(5, 200px);
+        gap: 10px;
+      }
+
+      .a174x100px {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+        text-transform: uppercase;
+        background-color: rgb(44, 44, 44);
+        color: white;
+        height: 100px;
+        width: 174;
+        border: 5px groove white;
+      }
+
+      .copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        width: 1235px;
+        height: 40px;
+        background-color: blue;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div-navigation">
+      <span class="nav-span">Home</span>
+      <span class="nav-span">About us</span>
+      <span class="nav-span">Contact</span>
+      <span class="nav-span">Company</span>
+      <span class="nav-span">Services</span>
+    </div>
+    <div class="div-info">
+      <span class="span-info tech"><h1>TechCorporate</h1></span>
+      <span class="span-info psd">Free PSD Website Template</span>
+      <span class="span-info mail">
+        Tel:xxxx.xxx.xxx <br />
+        Mail: info@domain.com
+      </span>
+    </div>
+    <img src="./technology.jpg" alt="technology" id="tech" />
+    <div class="inside-img-container">
+      <span class="span-title-lorem">Lorem ipsum dolor sit amet.</span>
+      <span class="span-info-lorem"
+        >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut rem error
+        provident officia, quidem modi iure, obcaecati velit neque qui ipsum
+        blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Debitis, architecto. Lorem ipsum dolor sit amet consectetur, adipisicing
+        elit. Voluptas, dicta! Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit. Earum, molestiae.</span
+      >
+      <div class="todays-techno">Todays Technology >></div>
+    </div>
+    <div class="spaceing"></div>
+    <div class="three-boxes">
+      <div class="a240x90px-container">
+        <div class="a240x90px">240x90px</div>
+      </div>
+      <div class="a240x90px-container">
+        <div class="a240x90px">240x90px</div>
+      </div>
+      <div class="a240x90px-container">
+        <div class="a240x90px">240x90px</div>
+      </div>
+    </div>
+    <hr class="hr-style" />
+    <div class="section-two">
+      <span class="span-indo">TEXT</span>
+      <div class="a200x160px">200x160px</div>
+      <div class="categories">
+        <div class="categories-text">Categories</div>
+        <div class="link-text">>>Link Text Goes Here</div>
+        <div class="link-text">>>Link Text Goes Here</div>
+        <div class="link-text">>>Link Text Goes Here</div>
+        <div class="link-text">>>Link Text Goes Here</div>
+        <div class="link-text">>>Link Text Goes Here</div>
+      </div>
+    </div>
+    <div class="pictures-container">
+      <span class="a174x100px">174x100px</span>
+      <span class="a174x100px">174x100px</span>
+      <span class="a174x100px">174x100px</span>
+      <span class="a174x100px">174x100px</span>
+      <span class="a174x100px">174x100px</span>
+    </div>
+    <div class="copyright">Copyright</div>
+  </body>
+</html>
