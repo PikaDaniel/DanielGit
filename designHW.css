@@ -1,0 +1,631 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@media only screen and (max-width: 594px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        margin:auto;
+        max-width:594px;
+        background-color: rgb(20, 20, 32);
+        color:rgba(255, 255, 255, 0.856);
+    }
+
+    .header-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr 2fr 1fr;
+        align-items: center;
+        justify-items: center;
+        background-color: rgb(0, 0, 48);
+        max-width: 100%;
+        height: 4rem;
+    }
+
+    .header-container .pic {
+        max-width: 60%;
+    }
+
+    .header-container .small-image {
+        max-width: 60%;
+        border-radius: 20px;
+    }
+
+    .search-container {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 20% 80%;
+        max-width: 100%;
+        height: 5rem;
+        margin: 0rem 0.5rem;
+    }
+
+    .search-container .search-png-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .search-container .search-png {
+        max-width: 30%;
+    }
+
+    .search-container #searchbar {
+        border: none;
+        height: 2rem;
+        background-color:rgb(20, 20, 32) ;
+    }
+
+    .trending-container {
+        display: grid;
+        grid-template-columns: 52% 45.5%;
+        grid-template-rows:12.5% 1fr ;
+        grid-template-areas:
+        "trending trending"
+        "image1 image2";
+        max-width: 100%;
+        height: 100%;
+        margin: 0rem 0.5rem;
+    }
+
+    .trending-container .trending-p-container {
+        grid-area: trending;
+    }
+
+    .trending-container .trending-p-container #trending-paragraph {
+        font-size: 1.4rem;
+    }
+
+    .trending-container .trending-Beyond-container {
+        position: relative;
+        grid-area: image1;
+    }
+
+    .trending-container #trending-Beyond-Earth {
+        max-width: 100%;
+        height: max-content;
+        border-radius: 10px;
+    }
+ 
+    .trending-container .trending-Beyond-img-text {
+        position:absolute;
+        bottom: 12px;
+        left: 20px;
+        color:red;
+    }
+
+    .trending-container .trending-car-container {
+        position: relative;
+        grid-area: image2;
+        height: 98%;
+    }
+
+
+    .trending-car-container #img-car {
+        max-width: 100%;
+        height: 11.3rem;
+        border-radius: 10px;
+    }
+
+    .trending-container .trending-car-img-text {
+        position: absolute;
+        bottom: 12px;
+        left: 20px;
+        color:darkblue;
+    }
+
+    .recommend-container {
+        display: grid;
+        grid-template-columns:repeat(2, 1fr) ;
+        grid-template-rows:repeat(12, 40px 140px) ;
+        grid-gap: 10px;
+        margin: 0rem 0.5rem;
+    }
+
+    .recommend-container .recommended-text {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        max-width: 100%;
+        height: max-content;
+        font-size:1.4rem;
+        margin: 3% 0% 3% 0%;
+    }
+
+    .recommend-container .tree {
+        display: flex;
+        max-width: 100%;
+        height: 8.7rem;
+        border-radius: 10px;
+    }
+
+    .recommend-container .tree-picture-text {
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 595px) and (max-width:850px )  {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        margin:auto;
+        max-width:100%;
+        background-color: rgb(20, 20, 32);
+        color:rgba(255, 255, 255, 0.856);
+    }
+
+    .header-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr 2fr 1fr;
+        align-items: center;
+        justify-items: center;
+        background-color: rgb(0, 0, 48);
+        max-width: 100%;
+        height: 4rem;
+        margin: 0.6rem 0.8rem;
+        border-radius: 8px;
+    }
+
+    .header-container .pic {
+        max-width: 40%;
+    }
+
+    .header-container .small-image {
+        max-width: 45%;
+        border-radius: 20px;
+    }
+
+    .search-container {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 8% 92%;
+        max-width: 100%;
+        height: 5rem;
+        margin: 0rem 0.8rem;
+    }
+
+    .search-container .search-png-container {
+        display: flex;
+        max-width: 50%;
+    }
+
+    .search-container .search-png {
+        max-width: 90%;
+    }
+
+    .search-container #searchbar {
+        border: none;
+        height: 3rem;
+        background-color:rgb(20, 20, 32) ;
+        font-size: 16px;
+    }
+
+    .trending-container {
+        display: grid;
+        grid-template-columns: 45% 55%;
+        grid-template-rows:16.6% 1fr ;
+        grid-template-areas:
+        "trending trending"
+        "image1 image2";
+        margin: 0rem 0.8rem;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .trending-container .trending-p-container {
+        grid-area: trending;
+        height: 2.2rem;
+    }
+
+    .trending-container .trending-p-container #trending-paragraph {
+        font-size: 1.4rem;
+        max-width: 100%;
+    }
+
+    .trending-container .trending-Beyond-container {
+        position: relative;
+        grid-area: image1;
+        width: 92%;
+    }
+
+    .trending-container #trending-Beyond-Earth {
+        max-width: 100%;
+        height: 95%;
+        border-radius: 10px;
+    }
+ 
+    .trending-container .trending-Beyond-img-text {
+        position:absolute;
+        bottom: 15px;
+        left: 20px;
+        color:red;
+ }
+
+    .trending-container .trending-car-container {
+        position: relative;
+        grid-area: image2;
+        max-width: 100%;
+        height: 98%;
+    }
+
+    .trending-car-container #img-car {
+        max-width: 100%;
+        height: 97%;
+        border-radius: 10px;
+    }
+
+    .trending-container .trending-car-img-text {
+        position: absolute;
+        bottom: 12px;
+        left: 20px;
+        color:darkblue;
+    }
+
+    .recommend-container {
+        display: grid;
+        grid-template-columns:repeat(2, 245px) ;
+        grid-template-rows:repeat(8, 40px 140px) ;
+        grid-gap: 10px;
+        margin: 0rem 0.8rem;
+        grid-template-areas:
+        "RecommendedText RecommendedText RecommendedText" 
+        "TreeRow1 TreeRow2 TreeRow3"
+        "TextRow1 TextRow1 TextRow1"
+        "TreeRow4 TreeRow5 TreeRow6"
+        "TextRow2 TextRow2 TextRow2"
+        "TreeRow7 TreeRow8 TreeRow9"
+        "TextRow3 TextRow3 TextRow3"
+        "TreeRow10 TreeRow11 TreeRow12"
+        "TextRow4 TextRow4 TextRow4"
+        "TreeRow13 TreeRow14 TreeRow15"
+        "TextRow5 TextRow5 TextRow5"
+        "TreeRow16 TreeRow17 TreeRow18"
+        "TextRow6 TextRow6 TextRow6"
+        "TreeRow19 TreeRow20 TreeRow21"
+        "TextRow7 TextRow7 TextRow7"
+        "TreeRow22 TreeRow23 TreeRow24"
+        "TextRow8 TextRow8 TextRow8"
+    }
+
+    .recommend-container .recommended-text {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        max-width: 100%;
+        height: 2rem;
+        font-size:1.4rem;
+        margin: 2% 0% 2% 0%;
+    }
+
+    .recommend-container .tree {
+        display: flex;
+        max-width: 100%;
+        height: 8.7rem;
+        border-radius: 10px;
+    }
+
+    .recommend-container .tree-picture-text {
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+    }
+
+    .recommend-container .tree-area-1 {
+        grid-area: TreeRow1;
+    }
+
+    .recommend-container .tree-area-2 {
+        grid-area: TreeRow2;
+    }
+
+    .recommend-container .tree-area-3 {
+        grid-area: TreeRow3;
+    }
+
+    .recommend-container .tree-area-4 {
+        grid-area: TreeRow4;
+    }
+
+    .recommend-container .tree-area-5 {
+        grid-area: TreeRow5;
+    }
+
+    .recommend-container .tree-area-6 {
+        grid-area: TreeRow6;
+    }
+
+    .recommend-container .tree-area-7 {
+        grid-area: TreeRow7;
+    }
+
+    .recommend-container .tree-area-8 {
+        grid-area: TreeRow8;
+    }
+
+    .recommend-container .tree-area-9 {
+        grid-area: TreeRow9;
+    }
+
+    .recommend-container .tree-area-10 {
+        grid-area: TreeRow10;
+    }
+
+    .recommend-container .tree-area-11 {
+        grid-area: TreeRow11;
+    }
+
+    .recommend-container .tree-area-12 {
+        grid-area: TreeRow12;
+    }
+
+    .recommend-container .tree-area-13 {
+        grid-area: TreeRow13;
+    }
+
+    .recommend-container .tree-area-14 {
+        grid-area: TreeRow14;
+    }
+
+    .recommend-container .tree-area-15 {
+        grid-area: TreeRow15;
+    }
+
+    .recommend-container .tree-area-16 {
+        grid-area: TreeRow16;
+    }
+
+    .recommend-container .tree-area-17 {
+        grid-area: TreeRow17;
+    }
+
+    .recommend-container .tree-area-18 {
+        grid-area: TreeRow18;
+    }
+
+    .recommend-container .tree-area-19 {
+        grid-area: TreeRow19;
+    }
+
+    .recommend-container .tree-area-20 {
+        grid-area: TreeRow20;
+    }
+
+    .recommend-container .tree-area-21 {
+        grid-area: TreeRow21;
+    }
+
+    .recommend-container .tree-area-22 {
+        grid-area: TreeRow22;
+    }
+
+    .recommend-container .tree-area-23 {
+        grid-area: TreeRow23;
+    }
+
+    .recommend-container .tree-area-24 {
+        grid-area: TreeRow24;
+    }
+}
+
+@media only screen and (min-width: 851px) {
+
+    .main-container {
+        display: grid;
+        grid-template-columns:repeat(20, 1fr);
+        grid-template-rows:repeat(9, 10.7%);
+        background-color: rgb(20, 20, 32);
+        color:rgba(255, 255, 255, 0.856);
+    }
+      
+    .header-container {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        background-color: rgb(0, 0, 48);
+        max-width: 100%;
+        margin: 0.8rem 0.8rem;
+        border-radius: 8px;
+        grid-row-start: 1;
+        grid-row-end: 11;
+    }
+      
+    .header-container .pic {
+        max-width: 45%;
+    }
+      
+    .header-container .small-image {
+        max-width: 50%;
+        border-radius: 20px;
+    }
+
+    .search-container {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 3% 97%;
+        margin: 1.5rem 0.5rem;
+        grid-column-start:2;
+        grid-column-end: 21;
+        grid-row-start: 1;
+        height: 70%;
+    }
+
+    .search-container .search-png-container {
+        max-width: 85%;
+    }
+
+    .search-container .search-png {
+        max-width: 80%;
+    }
+
+    .search-container #searchbar {
+        border: none;
+        background-color:rgb(20, 20, 32) ;
+        font-size: 16px;
+    }
+
+    .trending-container {
+        display: grid;
+        grid-template-columns: 19% 70%;
+        grid-template-rows: 15% 85%;
+        grid-template-areas: 
+        "trending trending"
+        "image1 image2";
+        align-items: center;
+        margin: 0rem 0.8rem;
+        grid-column-start:2;
+        grid-column-end: 21;
+        grid-row-start: 2;
+        grid-row-end: 6;
+        height: 90%;
+    }
+
+    .trending-container .trending-p-container {
+        grid-area: trending;
+        margin: 3% 0%;
+    }
+
+    .trending-container .trending-p-container #trending-paragraph {
+        font-size: 1.4rem;
+        max-width: 100%;
+    }
+
+    .trending-container .trending-Beyond-container {
+        grid-area: image1;
+        position: relative;
+        width:fit-content;
+    }
+
+    .trending-container #trending-Beyond-Earth {
+        border-radius: 10px;
+        max-width: 120%;
+        width: 110%;
+    }
+ 
+    .trending-container .trending-Beyond-img-text {
+        position: absolute;
+        bottom: 15px;
+        left: 20px;
+        color:red;
+    }
+
+    .trending-container .trending-car-container {
+        grid-area: image2;
+        position: relative;
+        height: fit-content;
+    }
+
+    .trending-car-container #img-car {
+        max-width: 28.5%;
+        height: 97%;
+        border-radius: 10px;
+    }
+
+    .trending-container .trending-car-img-text {
+        position: absolute;
+        bottom: 12px;
+        left: 20px;
+        color:darkblue;
+    }
+
+    .recommend-container {
+        display: grid;
+        grid-template-columns:11.5% 11.5% 11.5% 11.5%;
+        grid-template-rows:6% 20%;
+        grid-template-areas: 
+        "rec rec rec rec"
+        "img1 img2 img3 img4"
+        "text1 text1 text1 text1"
+        "img5 img6 img7 img8"
+        "text2 text2 text2 text2"
+        "img9 img10 img11 img12"
+        "text3 text3 text3 text3";
+        margin: 0rem 0.8rem;
+        grid-column-start: 2;
+        grid-column-end: 20;
+        grid-row-start: 6;
+        grid-row-end: 11;
+        color:white;
+    }
+
+    .recommend-container .recommended-text {
+        position: relative;
+        bottom: 60%;
+    }
+
+    .recommend-container .tree {
+        max-width: 100%;
+        height: 4rem;
+        border-radius: 10px;
+    }
+
+    .recommend-container .tree-picture-text {
+        max-width: 100%;
+        width: 100%;
+        height: 20%;
+    }
+
+    .recommend-container #rec-text {
+        font-size: 1.4rem;
+        max-width: 100%;
+    }
+
+    .recommend-container .tree-area-1 {
+        grid-area: img1;
+    }
+
+    .recommend-container .tree-area-2 {
+        grid-area: img2;
+    }
+
+    .recommend-container .tree-area-3 {
+        grid-area: img3;
+    }
+
+    .recommend-container .tree-area-4 {
+        grid-area: img4;
+    }
+
+    .recommend-container .tree-area-5 {
+        grid-area: img5;
+    }
+
+    .recommend-container .tree-area-6 {
+        grid-area: img6;
+    }
+
+    .recommend-container .tree-area-7 {
+        grid-area: img7;
+    }
+
+    .recommend-container .tree-area-8 {
+        grid-area: img8;
+    }
+
+    .recommend-container .tree-area-9 {
+        grid-area: img9;
+    }
+
+    .recommend-container .tree-area-10 {
+        grid-area: img10;
+    }
+
+    .recommend-container .tree-area-11 {
+        grid-area: img11;
+    }
+
+    .recommend-container .tree-area-12 {
+        grid-area: img12;
+    }
+
+    .recommend-container .recommended-text {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        max-width: 100%;
+        font-size:1.4rem;
+        /* margin: 2%; */
+    }
+
+    .hide{
+        display: none;
+    }
+
+}
