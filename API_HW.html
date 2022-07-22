@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> </head>
+  <body>
+    <div id="containerID">
+      <div>
+        <button type="button" onclick="loadAllPosts()">
+          Load Posts
+        </button>
+      </div>
+      <p id="postID"></p>
+    </div>
+
+    <script>
+      var apiURL =
+        "https://datausa.io/api/data?drilldowns=State&measures=Population&year=latest";
+  
+      function loadAllPosts() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
+            var posts = JSON.parse(this.responseText);
+            console.log(posts);
+  
+            for (var index = 0; index < posts.length; index++) {
+              var paragraph = document.createElement("p");
+              var textContent = document.createTextNode(posts[index].state);
+              paragraph.append(textContent);
+              document.getElementById("containerID").appendChild(paragraph);
+            }
+          }
+        };
+        xhttp.open("GET", apiURL, true);
+        xhttp.send();
+      }
+    </script>
+  </body>
+</html>
